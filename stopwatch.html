@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My StopWatch</title>
+  <link rel="stylesheet" type="text/css" href="/Internal storage/My Web Projects/stopwatch.css">
+  <script src="Internal storage/My Web Projects/stopwatch.js"></script>
+</head>
+
+<body>
+  <div id="container">
+     <div id="displayBox">
+       <input type="text" id="hoursDisplay" readonly value = 0>
+       <input type="text" id="minutesDisplay" readonly value = 0>
+       <input type="text" id="secondsDisplay" readonly value = 0>
+       <input type="text" id="milliSecondsDisplay" readonly value = 0>
+     </div>
+
+     <div id="btnBox1">
+       <button class="startBtn" onclick="btnClick('startBtn')">Start</button>
+       <button class="stopBtn" onclick="btnClick('stopBtn')">Stop</button>
+     </div>
+
+     <div id="btnBox2">
+       <button class="resetBtn" onclick="btnClick('resetBtn')">Reset</button>
+     </div>
+
+     <div id="displayBox2">
+       <h id="milliSecondsShow">0</h><br><br>
+       <h id="secondsShow">0</h><br><br>
+       <h id="minutesShow">0</h><br><br>
+       <h id="hoursShow">0</h><br><br>
+     </div>
+
+  </div>
+
+ </div>
+</body>
+</html>
