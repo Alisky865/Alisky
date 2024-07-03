@@ -1,0 +1,262 @@
+
+*
+ {margin:0px;
+  padding:0px;
+ }
+
+ .container
+ {display:flex;
+  flex-direction:column;
+  place-items:center; gap:5px;
+  background-color:white;
+  height:max-content; width:max-content;
+  padding:10px 15px;
+  margin-bottom:10px;
+  order:2px solid rgb(17, 16, 16);
+  border-radius:25px;
+  position:absolute; top:2%; left:50%;
+  transform:translateX(-50%);
+  box-shadow: inset -3px -3px 9px rgba(0, 0, 0, 0.3);
+  transition:all 0.76s ease-in-out
+ }
+
+   .container-darkMode
+   {background-color:rgba(31, 29, 29, 0.829);
+   box-shadow: inset -3px -3px 9px rgb(8, 0, 0);
+   transition:all 0.76s ease-in-out;}
+
+
+   /*.container::before
+   {content:'';
+   position:absolute; top:0px; right:0px;
+   height:100%; width:8%;
+   background-image:linear-gradient(to left,rgba(116, 113, 113, 0.2)30%, transparent 85%);
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+   /*transform:skewX(-10deg);
+   box-shadow:inset 2px 4px 10x rgba(0, 0, 0, 0.3);}*/
+
+
+
+   .date-time-box
+    {display:flex;
+    flex-direction:column;
+    gap:3px; 
+    background-color:rgb(175, 170, 170);
+    height:25px; width:65px;
+    padding:3px 3px;
+    border:none;
+    border-radius:3px;
+    position:relative; left:-73px;
+    box-shadow: 1px 1px 4px rgb(48, 46, 46) inset;
+    transition:all 0.76s ease-in-out;}
+
+     .date-time-box-darkMode
+     {background-color:rgb(0, 0, 0);
+      transition:all 0.76s ease-in-out;}
+
+
+     .date, .time
+     {font-size:10px; font-weight:bold;
+      color:black; text-align:center;
+      transition:all 0.76s ease-in-out;}
+
+     .datetime-darkMode
+     {color:white;
+      transition:all 0.76s ease-in-out;}
+
+   .display-box
+    {display:flex;
+    flex-direction:column;
+    place-items:center; gap:3px;
+    background-color:transparent;
+    padding:5px 5px;
+    height:70px; width:210px;
+    order:2px solid rgb(17, 16, 16);
+    border-radius:5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
+    transition:all 0.76s ease-in-out;  
+    }
+
+     .display-box-darkMode
+     {box-shadow: 2px 2px 8px rgb(5, 0, 0) inset;
+      transition:all 0.76s ease-in-out;}
+
+     .display1
+     {display:none;
+      font-size:20px; font-weight:bold;
+     background-color:transparent;
+     color:black; float:left;
+     text-align:center;
+     height:25px; width:205px;
+     padding:2px 2px;
+     border:none;
+     transition:all 0.76s ease-in-out;}
+
+       .displayMode
+       {color:white;
+       transition:all 0.76s ease-in-out;}
+
+
+     .display2
+     {display:none;
+      font-size:20px; font-weight:bold;
+     background-color:transparent;
+     color:crimson;
+     text-align:center;
+     height:25px; width:205px;
+     padding:2px 2px;
+     border:none;
+     transition:all 0.76s ease-in-out;}
+
+       .displayMode2
+       {color:white;
+       transition:all 0.76s ease-in-out;}
+
+
+   .calc-buttons-box
+    {flex:4;
+    display:flex;
+    flex-direction:column;
+    place-items:center; gap:3px;
+    background-color:transparent;
+    padding:1px 1px;
+    height:max-content; width:max-content;
+    order:2px solid rgb(17, 16, 16);
+    transition:all 0.76s ease-in-out;}
+
+     .switch-buttons
+     {display:flex;
+      flex-direction:row;
+      align-items:center; justify-content:space-between;
+      gap:5px;
+      height:max-content; width:225px;
+      order:2px solid black;
+      padding:1px 1px;}
+
+       .offBtn
+       {font-size:15px; font-weight:bold;
+        color:white;
+        background-color:red;
+        height:25px; width:50px;
+        border:2px solid red;
+        border-radius:17px;
+        text-align:center;
+        transition:all 0.7s ease-in-out
+       }
+
+       .onBtn
+       {font-size:15px; font-weight:bold;
+        color:rgb(23, 92, 23);
+        background-color:transparent;
+        height:25px; width:50px;
+        border:2px solid rgb(23, 92, 23);
+        border-radius:17px;
+        text-align:center;
+        transition:all 0.7s ease-in-out
+       }
+
+       .offActive
+       {color:rgb(219, 58, 58);
+        background-color:transparent;
+        transition:all 0.7s ease-in-out
+       }
+
+       .onActive
+       {color:white;
+        background-color:rgb(23, 92, 23);
+        transition:all 0.7s ease-in-out
+       }
+
+       
+       .offBtn:hover
+       {cursor:pointer;}
+
+       .onBtn:hover
+       {cursor:pointer;}
+
+
+       .light-mode
+       {display:none;
+        font-size:15px; font-weight:bold;
+        color:white;
+        background-color:transparent;
+        height:25px; width:50px;
+        border:none;
+        text-align:center;
+        transition:all 0.7s ease-in-out
+       }
+
+       
+       .light-mode:hover
+       {cursor:pointer;}
+
+       
+       .dark-mode
+       {color:skyblue; 
+        background-color:transparent;
+        font-size:15px; font-weight:bold;
+        height:25px; width:50px;
+        border:none;
+        text-align:center;
+        transition:all 0.7s ease-in-out
+       }
+
+       .dark-mode:hover
+       {cursor:pointer;}
+
+
+
+     .second-buttons-box
+     {display:grid;
+     grid-template-columns:1fr 1fr 1fr 1fr;
+     place-items:center; gap:10px;
+     background-color:transparent;
+     order:2px solid black;
+     height:max-content; width:235px;
+     padding:3px 0px 3px 0px;}
+
+       .mathsOps, .mathsOpsDeg, .mathsOpsRad
+        {background-color:transparent;
+        color:crimson; font-weight:bold; font-size:11px;
+        border:none;
+        border-radius:100%;
+        cursor:pointer;
+        height:35px; width:35px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);}
+
+
+        .mathsOpsDeg
+        {display:none;
+         transition:all 0.7s ease-in-out}       
+
+
+
+     .third-buttons-box
+     {display:grid;
+     grid-template-columns:1fr 1fr 1fr 1fr;
+     place-items:center; gap:10px;
+     background-color:transparent;
+     height:max-content; width:235px;
+     order:2px solid black;
+     padding:3px 0px 3px 0px;
+     }
+
+       .numsBtn1,.numsBtn2,.numsBtn3,.numsBtn4,.numsBtn5,.numsBtn6,
+       .numsBtn7,.numsBtn8,.numsBtn9,.numsBtn10,.numsBtn11,.numsBtn12
+       {background-color:transparent;
+       color:black; font-weight:bold; font-size:11px;
+       border:none;
+       border-radius:100%;
+       cursor:pointer;
+       height:35px; width:35px;
+       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+       transition:all 0.7s ease-in-out}
+
+
+
+
+
+
+
+

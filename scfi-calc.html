@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Scfi-Calc</title>
+   <link rel="stylesheet" type="text/css" href="/scfi-calc.css">
+
+   <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+
+   <script src="/scfi-calc.js"></script>
+ </head>
+
+ <body>
+
+  <section class="container">
+
+     <div class="date-time-box">
+       <p class="date"></p>
+       <p class="time"></p>  
+     </div>
+
+
+     <div class="display-box">
+       <input type="text" class="display1" readonly value = 0 disabled>
+       <input type="text" class="display2"  disabled>
+      
+     </div>
+
+     <div class="calc-buttons-box">
+       <div class="switch-buttons">
+         <button class="offBtn" onclick="switchBtn('offBtn')">OFF</button>
+
+         <button class="light-mode"
+         onclick="switchBtn2('light-mode')">
+          <i class="fa fa-sun" id="sun-icon"></i>
+         </button>
+
+         <button class="dark-mode"
+         onclick="switchBtn2('dark-mode')">
+          <i class="fa fa-circle-half-stroke" id="moon-icon"></i>
+         </button>
+
+         <button class="onBtn" onclick="switchBtn('onBtn')">ON</button>
+       </div>
+
+       <div class="second-buttons-box">
+         <button  class="mathsOps" onclick="piPI('&pi;')" >&pi;</button>
+         <button  class="mathsOpsDeg" onclick="sciFunc('deg')" >Deg</button>
+         <button  class="mathsOpsRad" onclick="sciFunc('rad')" >Rad</button>
+         <button  class="mathsOps" onclick="sciFunc('log10x')" >log<sup>10</sup></button>
+         <button  class="mathsOps" onclick="power('power2')" >x<sup>2</sup></button>
+         <button  class="mathsOps" onclick="sciFunc('log')" >log</button>
+         <button  class="mathsOps" onclick="sciFunc('sin')" >sin</button>
+         <button  class="mathsOps" onclick="sciFunc('cos')" >cos</button>
+         <button  class="mathsOps" onclick="sciFunc('tan')" >tan</button>
+         <button  class="mathsOps" onclick="power('3sqrt')" ><sup>3</sup>&radic;</button>
+         <button  class="mathsOps" onclick="sciFunc('sin-1')" >sin<sup>-1</sup></button>
+         <button  class="mathsOps" onclick="sciFunc('cos-1')" >cos<sup>-1</sup></button>
+         <button  class="mathsOps" onclick="sciFunc('tan-1')" >tan<sup>-1</sup></button>
+         <button  class="mathsOps" onclick="power('power3')" >x<sup>3</sup></button>
+         <button  class="mathsOps" onclick="bracket('(')" >(</button>
+         <button  class="mathsOps" onclick="bracket(')')" >)</button>
+         <button  class="mathsOps" onclick="power('sqrt')" >&radic;</button>
+       </div>
+
+       <div class="third-buttons-box">
+         <button  class="mathsOps" onclick="resetCalc()" >AC</button>
+         <button  class="mathsOps" onclick="delBtn()" >DEL</button>
+         <button  class="mathsOps" onclick="percenTage('%')" >%</button>
+         <button  class="mathsOps" onclick="mathFunc(' / ')" >&divide;</button>
+         <button  class="numsBtn1" onclick="mathFunc('7')" >7</button>
+         <button  class="numsBtn2" onclick="mathFunc('8')" >8</button>
+         <button  class="numsBtn3" onclick="mathFunc('9')" >9</button>
+         <button  class="mathsOps" onclick="mathFunc(' * ')" >&times;</button>
+         <button  class="numsBtn4" onclick="mathFunc('4')" >4</button>
+         <button  class="numsBtn5" onclick="mathFunc('5')" >5</button>
+         <button  class="numsBtn6" onclick="mathFunc('6')" >6</button>
+         <button  class="mathsOps" onclick="mathFunc(' - ')" >-</button>
+         <button  class="numsBtn7" onclick="mathFunc('1')" >1</button>
+         <button  class="numsBtn8" onclick="mathFunc('2')" >2</button>
+         <button  class="numsBtn9" onclick="mathFunc('3')" >3</button>
+         <button  class="mathsOps" onclick="mathFunc(' + ')" >+</button>
+         <button  class="numsBtn10" onclick="mathFunc('00')" >00</button>
+         <button  class="numsBtn11" onclick="mathFunc('0')" >0</button>
+         <button  class="numsBtn12" onclick="mathFunc('.')" >.</button>
+         <button  class="mathsOps" onclick="equalTo('=')" >=</button>
+        
+       </div>
+      
+     </div>
+
+  </section>
+  
+ </body>
+ </html>
